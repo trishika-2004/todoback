@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/tododb")
+mongoose.connect("mongodb://todouser:todo1234@localhost:27017/tododb")
   .then(() => console.log("MongoDB connected!"))
   .catch(err => console.log("MongoDB error:", err));
 
